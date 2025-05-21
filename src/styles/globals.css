@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom styles for the logo */
+.logo-img {
+  max-height: 36px;
+  width: auto;
+  transition: opacity 0.3s ease;
+}
+
+.logo-img:hover {
+  opacity: 0.9;
+}
+
+/* Theme-specific adjustments */
+.dark .logo-contrast {
+  filter: brightness(1.2);
+}
+
+.light .logo-contrast {
+  filter: brightness(0.95);
+}
